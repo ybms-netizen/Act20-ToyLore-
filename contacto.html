@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toylore | contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!--encabezado-->
+    <header>
+        <img src="toylore_logo.png" alt="Logo de ToyLore">
+        <h1>ToyLore</h1>
+        <p>Ponte en contacto con el equipo de NovaLink.</p>
+    </header>
+
+    <!--panel de navegacion-->
+
+    <nav>
+        <form>
+            <input type="search" placeholder="Buscar...">
+        </form>
+
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="noticias.php">Noticias</a></li>
+            <li><a href="foro.php">Foro</a></li>
+            <li><a href="reglas.html">Reglas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+<!--contenido principal-->
+<main class="contacto-layout">
+    <section>
+        <header>
+            <h2>Formulario de contacto</h2>
+        </header>
+        <p>Utiliza este formulario para enviar dudas, sugerencias, reportes o cualquier consulta relacionada con ToyLore.</p>
+<br>
+<br>
+        <form>
+            <label for="nombre">Nombre de usuario</label>
+            <input type="text" id="nombre" required>
+
+            <label for="correo">Correo electronico</label>
+            <input type="email" id="correo" required>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" required>
+
+            <!--motivo o asunto del mensaje o consulta-->
+            <label for="motivo">Motivo del contacto:</label>
+            <select id="motivo" required>
+                <option value="">Selecciona una opcion</option>
+                <option>Duda general</option>
+                <option>Problema tecnico</option>
+                <option>Reportar contenido</option>
+                <option>Sugerencia</option>
+                <option>Otro...</option>
+            </select>
+
+            <!--label para el mensaje-->
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="8" required></textarea>
+
+            <!--boton de envio-->
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <aside>
+        <h2>Informacion adicional</h2>
+        <p>Tambien puedes consultar la seccion de reglas de la comunidad o los apartados de noticias y foro para obtener mas informacion sobre ToyLore.</p>
+    </aside>
+</main>
+
+<!--pie de pagina-->
+
+    <footer>
+        <p>© 2026 ToyLore</p>
+        <p>NovaLink</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

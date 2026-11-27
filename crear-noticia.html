@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyLore | Crear noticia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!--encabezado de la pagina-->
+    <header>
+        <img src="toylore_logo.png" alt="Logo de ToyLore">
+
+        <section>
+            <h1>Toylore</h1>
+            <p>Panel de administracion.</p>
+        </section>
+    </header>
+
+    <!--panel de navegacion-->
+
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="noticias.php">Noticias</a></li>
+            <li><a href="foro.php">Foro</a></li>
+            <li><a href="reglas.html">Reglas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <header>
+                <h2>Crear noticia oficial</h2>
+            </header>
+
+            <form action="php/crear-noticia.php" method="POST" enctype="multipart/form-data">
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="contenido">Contenido</label>
+                <textarea name="contenido" id="contenido" name="contenido" rows="8" required></textarea>
+
+                <label for="imagen">Imagen</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+
+                <button type="submit">Publicar noticia</button>
+            </form>
+        </section>
+    </main>
+    <!--pie de pagina-->
+    <footer>
+        <p>© 2026 Toylore</p>
+        <p>Novalink</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

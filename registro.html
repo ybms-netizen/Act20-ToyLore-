@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toylore | registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!--encabezado-->
+    <header>
+        <img src="toylore_logo.png" alt="Logo de ToyLore">
+        <h1>ToyLore</h1>
+        <p>Unete a la comunidad oficial de coleccionistas de figuras Transformers.</p>
+    </header>
+
+    <!--panel de navegacion-->
+
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="noticias.php">Noticias</a></li>
+            <li><a href="foro.php">Foro</a></li>
+            <li><a href="reglas.html">Reglas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!--contenido main / principal-->
+
+    <main class="registro-layout">
+        <section>
+            <header>
+                <h2>Crear cuenta</h2>
+            </header>
+
+            <p>Registrate para crear publicaciones, comentar, guardar contenido y participar activamente en la comunidad de ToyLore</p>
+            <br>
+            
+            <form action="php/registro.php" method="POST">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario"  name="usuario" required>
+
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmar">Confirmar contraseña</label>
+                <input type="password" id="confirmar" required>
+
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" id="fecha" required>
+
+                <label>
+                    <input type="checkbox" required>
+                    He leido y acepto las <a href="reglas.html">reglas de la comunidad</a>
+                </label>
+
+                <button type="submit">Registrarme</button>
+            </form>
+        </section>
+
+        <aside>
+            <h2>¿Ya tienes cuenta?</h2>
+            <p>Accede a ToyLore para continuar participando en la comunidad.</p>
+            <a href="login.html">Iniciar sesion</a>
+        </aside>
+    </main>
+
+<!--pie de pagina-->
+
+    <footer>
+        <p>© 2026 ToyLore</p>
+        <p>NovaLink</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

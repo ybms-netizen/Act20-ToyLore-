@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toylore | inicio de sesion</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!--encabezado-->
+    <header>
+        <img src="toylore_logo.png" alt="Logo de ToyLore">
+        <h1>ToyLore</h1>
+        <p>Crea tu cuenta para acceder a la comunidad oficial de coleccionistas de figuras Transformers.</p>
+    </header>
+
+    <!--panel de navegacion-->
+
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="noticias.php">Noticias</a></li>
+            <li><a href="foro.php">Foro</a></li>
+            <li><a href="reglas.html">Reglas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!--contenido del formulario-->
+
+    <main class="login-layout">
+        <section>
+            <header>
+                <h2>Iniciar sesion</h2>
+            </header>
+            <p>Inicia sesion para participar en la comunidad ToyLore, comentar en las publicaciones, guardar contenido y
+                crear nuevos temas de discusion.</p>
+                <br>
+                
+            <form action="php/login.php" method="POST">
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Iniciar sesion</button>
+            </form>
+        </section>
+
+        <aside>
+            <h2>¿no tienes cuenta?</h2>
+            <p>Registrate gratis para que formes parte de la comunidad.</p>
+            <a href="registro.html">Crear cuenta</a>
+        </aside>
+
+    </main>
+
+    <!--pie de pagina-->
+
+    <footer>
+        <p>© 2026 ToyLore</p>
+        <p>NovaLink</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
